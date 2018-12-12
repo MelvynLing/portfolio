@@ -1,0 +1,337 @@
+/* =======================================
+    DEFAULT THEME
+    -------------------------------------
+    Fonts: Google Fonts - Raleway 
+    -------------------------------------
+    Colors:
+        Vermillion: #d21b32
+        Dark Grey:  #212226
+        Whitesmoke: #f4f4f4
+        White:      #FFFFFF
+        Black:      #000000
+========================================= */ 
+
+/* =======================================
+-----------------------------------------
+            HTML/BODY - CSS  
+-----------------------------------------
+========================================= */ 
+html, body {
+    height: 100%;
+    
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #212226 !important
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+p {
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 24px
+}
+
+section {
+    background: #fff;
+    overflow: hidden;
+
+}
+  
+/* =======================================
+-----------------------------------------
+            PRELOADER - CSS
+-----------------------------------------
+========================================= */ 
+#preloader {
+    background-color: #fff;
+    position: fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index: 9999;}
+    
+#status {
+    background-image: url('../img/preloader/preloader1.gif');
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -35px;
+    margin-left:-35px;
+
+ }
+
+ /* =======================================
+-----------------------------------------
+            HOME - CSS
+-----------------------------------------
+========================================= */ 
+#home{
+    background: none;
+    height: 100%;
+}
+
+#home-bg-video {
+    position: fixed;
+    top:50%;
+    left:50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background: url('../video/melporfolio.jpg') no-repeat;
+    background-size: cover;
+}
+
+#home-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+#home-content{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#home-heading h1 {
+    color:#ffffff;
+    font-size: 85px;
+    font-weight: 100;
+    font-variant: small-caps;
+    /* text-transform: uppercase; */
+    margin: 0;
+    display: inline-block;
+}
+
+#home-heading h1 span {
+    color: #d21b32;
+    font-weight: 700;
+}
+
+#home-text p {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 100;
+    margin: 8px 0 30px 0;
+}
+ /* =======================================
+-----------------------------------------
+            BUTTONS - CSS
+-----------------------------------------
+========================================= */ 
+.btn-general{
+    font-family: "Raleway", sans-serif;
+    border-radius: 28px;
+    font-size: 25px;
+    font-weight: 600; 
+    font-variant: small-caps;
+    /* text-transform: uppercase; */
+    margin: 0 6px;
+    padding: 12px 46px 12px, 46px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.btn-home {
+    color: #ffffff;
+    border: 1px solid;
+}
+
+.btn-home:hover, .btn-home:focus {
+    color: #fff;
+    background-color: #d21b32;
+    border: 1px solid ;
+    font-weight: 600;
+}
+
+.resumebtn{
+    color: #d21b32;
+    border: 1px solid;
+}
+
+.resumebtn:hover, .resumebtn:focus{
+    color: #d21b32;
+    background-color: #ffffff;
+    border: 1px solid ;
+}
+ /* =======================================
+-----------------------------------------
+            ARROW - CSS
+-----------------------------------------
+========================================= */
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    color: #fff;
+    font-size: 42px;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    margin-left: -21px; 
+    z-index: 1;
+}
+
+#arrow-down:hover,#arrow-down:focus {
+    color: #d21b32;
+    font-size: 42px;
+    width: 42px;
+    height: 42px;
+}
+
+ /* =======================================
+-----------------------------------------
+            Content Boxes - CSS
+-----------------------------------------
+========================================= */ 
+
+.content-box-lg {
+    padding: 120px 0;
+}
+
+.content-box-md {
+    padding: 100px;
+
+}
+
+ /* =======================================
+-----------------------------------------
+            Vertical Headings - CSS
+-----------------------------------------
+========================================= */ 
+
+#vertical-heading h5 {
+    color: #d21b32;
+    font-size: 20px;
+    font-weight: 700;
+    font-variant: small-caps;
+    /* text-transform: uppercase; */
+    word-spacing: 9px;
+    display: inline-block;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: relative;
+    top: 70px;
+    left: -70px;
+}
+
+#vertical-heading h2 {
+    margin: 0 0 0 35px;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 45px;
+}
+
+ /* =======================================
+-----------------------------------------
+            ABOUT1 SECTION - CSS
+-----------------------------------------
+========================================= */ 
+
+#about-right p:first-child {
+    margin-bottom: 30px;
+}
+
+#about-bottom {
+    margin-top: 60px;
+}
+
+#about-bottom img {
+    margin:0 auto;
+    padding: 0 0 100px 0
+}
+
+ /* =======================================
+-----------------------------------------
+            ABOUT2 SECTION - CSS
+-----------------------------------------
+========================================= */ 
+
+#about2 {
+    background-color: #f4f4f4;
+}
+
+.about-item {
+    background-color: #ffffff;
+    padding: 80px 30px;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+
+.about-item i {
+    font-size: 45px;
+    margin: 0;
+    /* color: #d21b32;*/
+} 
+
+.about-item h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    /* color: #d21b32; */
+}
+
+.about-item hr {
+    width: 200px;
+    height: 3px;
+    background-color: #d21b32;
+    margin: 0 auto;
+    border: none;
+
+}
+
+.about-item p {
+    margin-top: 20px;
+}
+
+.about-item:hover {
+    background: #d21b32;
+
+}
+
+.about-item:hover i,
+.about-item:hover p,
+.about-item:hover h3 {
+    color: #ffffff;
+
+}
+
+.about-item:hover hr {
+    background-color: #212226;
+
+}
+
+.about-item:hover i {
+    transform: translateY(-20px);
+}
+
+
+.about-item, 
+.about-item i,
+.about-item hr {
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
