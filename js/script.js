@@ -55,7 +55,7 @@ $(function () {
 });
 /*=======================================
 -----------------------------------------
-    Portfolio Section - JQUERY
+    Portfolio Section filter - JQUERY
 -----------------------------------------
 =========================================*/
 $(window).on('load', function () {
@@ -76,3 +76,56 @@ $(window).on('load', function () {
                 $(this).addClass('active');
         });
 });
+/*=======================================
+-----------------------------------------
+    Portfolio Section magnifier
+             - JQUERY
+-----------------------------------------
+=========================================*/
+
+$(function () {
+
+    $("#portfolio-wrapper").magnificPopup({
+        delegate: 'a',
+        type:'image',
+        gallery: {
+            enabled: true
+        }
+    });
+
+});
+
+/*=======================================
+-----------------------------------------   
+            Google Maps API data
+-----------------------------------------
+=========================================*/
+
+$(window).on("load", function () {
+    //locations
+    var currentLocale = "Hamilton, Ontario, Canada"
+    var myLatLng = {lat:43.255722, lng:-79.871101};
+    //renders map
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 11,
+        center: myLatLng
+    });
+    //renders marker for locale
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: "Click to See Address!"
+    })
+    var infowindow = new google.maps.InfoWindow({
+        content: currentLocale
+    });
+    //show infowindow win user clicks on the map marker.
+    marker.addListener('click', function () {
+        infowindow.open(map,marker);
+    });
+        
+
+});
+
+
+  

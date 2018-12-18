@@ -636,7 +636,7 @@ ul.social-list li:nth-child(4) a:hover {
     padding: 0;
     text-decoration: none;
 }
-#services-tabs ul li.r-tabs-anchor  {
+#services-tabs ul li.r-tabs-state-active a  {
     color: #d21b32;
     /* text-decoration-line: underline; */
     font-weight: 700;
@@ -680,11 +680,18 @@ ul.social-list li:nth-child(4) a:hover {
             Portfolio - CSS
 -----------------------------------------
 ========================================= */
+#portfolio .content-box-md {
+    padding-bottom: 0;
+}
 #portfolio .vertical-heading {
     margin-bottom: 50px;
 }
 .row.no-gutters [class*=col-] {
     padding: 0;
+}
+.portfolio-item{
+    overflow: hidden;
+    position: relative;
 }
  /* =======================================
 -----------------------------------------
@@ -705,6 +712,7 @@ ul.social-list li:nth-child(4) a:hover {
     -webkit-box-shadow: none;
     box-shadow: none;
     padding-right: 40px;
+    outline: 0;
 }
 #isotope-filters button span {
     display: block;
@@ -717,4 +725,262 @@ ul.social-list li:nth-child(4) a:hover {
     font-weight: 600; 
     border-bottom: 2px solid #d21b32;
     padding-bottom: 5px;
+}
+/*Zoom Effect*/
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.portfolio-item:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/*overlay Effect*/
+.portfolio-item-overlay {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(14,14,17,0.9);
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/*item details effect*/
+.portfolio-item-details {
+    position: absolute;
+    width:100%;
+    top: 50%;
+    left:0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.portfolio-item-details h3 {
+    color: #d21b32;
+    font-variant: small-caps;
+    /* text-transform: uppercase; */
+    font-size: 35px;
+    margin:0;
+    padding:0;
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%)
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.portfolio-item-details span {
+    display: inline-block;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    height: 6px;
+    width: 30px;
+    margin: 11px auto 5px auto
+}
+.portfolio-item-details p {
+    font-size: 17px;
+    color: #fff;
+    font-variant: small-caps;
+    /* text-transform: uppercase; */
+    margin:0;
+    padding:0;
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/*Show Overlay on Mouse over*/
+.portfolio-item:hover .portfolio-item-details h3 {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.portfolio-item:hover .portfolio-item-details p {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.portfolio-item:hover .portfolio-item-overlay {
+    opacity: 1;
+}
+
+ /* =======================================
+-----------------------------------------
+    Googlemap API- CSS
+-----------------------------------------
+========================================= */
+#stats {
+    background: url("../img/stats/stats-bg.jpg") no-repeat fixed center;
+    background-size: cover;
+
+    /* display: grid; */
+}
+#stats .content-box-md{
+    background:rgba(0, 0, 0, 0.8)
+}
+#stats .vertical-heading{
+    margin-bottom: 50px;
+}
+#stats .vertical-heading h2{
+    color:#fff;
+}
+.stats-item {
+    background: rgba(61,68,68,0.6);
+    border-radius: 3px;
+    min-height: 200px;
+    padding: 50px 50px;
+    -webkit-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+.stats-item i{
+    font-size: 40px;
+    color:#d21b32;
+    margin:0 0 6px 0;
+}
+.stats-item h3{
+    font-size: 30px;
+    color:#fff;
+    margin: 5px 0 5px 0;
+
+}
+.stats-item p{
+    color: #fff;
+    margin: 0;
+}
+
+.stats-item:hover{
+    background: #d21b32;
+
+}
+
+.stats-item:hover i {
+    /* font-size: 45px; */
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+    -webkit-transition: 400ms ease-out;
+    transition: 400ms ease-out;
+    color:white;
+}
+.stats-item:hover h3 {
+    color: #212226
+}
+
+
+ /* =======================================
+-----------------------------------------
+    contact - CSS
+-----------------------------------------
+========================================= */
+    /*left side*/
+#contact {
+    background: #f4f4f4;
+}
+#contactLeft p{
+    margin: 25px 0 20px 0;
+}
+ul.address-details {
+    list-style: none;
+    padding: 0
+}
+ul.address-details li {
+    font-family: "Raleway", sans-serif;
+    margin-top: 12px;  
+    display: flex;
+}
+ul.address-details li i {
+    font-size: 20px;
+    width:45px;
+    text-align: center;
+}
+
+#contactLeft ul.social-list li a {
+    color: #212226;
+    border: 1px solid #212226;
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+#contactLeft ul.social-list li a:hover {
+    color: #fff;
+    border: transparent;
+
+}
+    /*Right side*/
+#contactRight {
+    background:#fff;
+    padding: 30px 30px;;
+    -webkit-box-shadow: 0 0 10 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+    border-radius: 3px;
+
+}
+#contactRight h4 {
+    display:inline-block;
+    border-bottom: 2px solid #d21b32;
+    padding-bottom: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-variant: small-caps;
+    /* text-transform: uppercase; */
+}
+#contactRight p {
+    margin-bottom: 25px;
+}
+#contactRight form input.form-control {
+    font-display: "Raleway", sans-serif;
+    padding: 10px 15px;
+    font-size: 12px;
+    line-height: 25px;
+}
+#contactRight form textarea.form-control {
+    min-height: 165px;
+}
+ /* =======================================
+-----------------------------------------
+    Googlemap API- CSS
+-----------------------------------------
+========================================= */
+#google-map #map {
+    background-color: #f4f4f4;
+    height: 600px;
+    width: 100%;
+    border-top: 25px solid #212226;
+    padding-top: 150px;
+    padding-bottom: 150px
+}
+ /* =======================================
+-----------------------------------------
+    Footer - CSS
+-----------------------------------------
+========================================= */
+footer {
+    background: #212226;
+    padding: 30px;
+}
+footer p{ 
+    color: #fff;
+    line-height: 30px;
+    font-size: 20px;
+}
+footer p span {
+    color: #d21b32;
+    font-weight: 700;
+    border-bottom: 2px solid #d21b32;
+    padding-bottom: 2px;
+    font-variant: small-caps;
+    /* text-transform: uppercase; */
+}
+
+footer .strips {
+    display: inline-block;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    height: 6px;
+    width: 30px;
+    margin: 11px auto 5px auto
 }
