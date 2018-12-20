@@ -82,7 +82,6 @@ $(window).on('load', function () {
              - JQUERY
 -----------------------------------------
 =========================================*/
-
 $(function () {
 
     $("#portfolio-wrapper").magnificPopup({
@@ -94,13 +93,23 @@ $(function () {
     });
 
 });
+/*=======================================
+-----------------------------------------   
+        Counter Plugin
+-----------------------------------------
 
+=========================================*/
+$(function () {
+    $(".counter").counterUp({
+        delay: 10,
+        time: 2000    
+    })
+});
 /*=======================================
 -----------------------------------------   
             Google Maps API data
 -----------------------------------------
 =========================================*/
-
 $(window).on("load", function () {
     //locations
     var currentLocale = "Hamilton, Ontario, Canada"
@@ -123,9 +132,50 @@ $(window).on("load", function () {
     marker.addListener('click', function () {
         infowindow.open(map,marker);
     });
-        
-
 });
+/*=======================================
+-----------------------------------------   
+            Navigation animation
+-----------------------------------------
+=========================================*/
+/* show and hide white nav bad*/
+$(function () {
+        showHideNav();
+    ///excute this function when the window scrolls
+    $(window).scroll(function() {
+        showHideNav();
+    });
 
+    function showHideNav() {
+        if( $(window).scrollTop() > 50 ) {
+            //shows white nav with darker logo
+            $("nav").addClass("white-nav-top");
 
-  
+            //shows back to top btn when viewport is off home section
+            $("#back-to-top").fadeIn();
+        } else {
+            $("nav").removeClass("white-nav-top");
+            //hides back to top btn when viewport is off home section
+            $("#back-to-top").fadeOut();
+        }
+    }
+});
+/*=======================================
+-----------------------------------------   
+        smooth scrolling animation
+-----------------------------------------
+=========================================*/
+
+$(function () {
+    $("a.smooth-scroll").click(function (event) {
+        
+        event.preventDefault();
+
+        //grab section id -> #about, #home, #portfolio, etc
+        var sectionID = $(this).attr("href");
+        $("html, body").animate({ 
+            scrollTop: $(sectionID).offset().top - 64
+        }, 1250, "easeInOutExpo");
+
+    });
+});

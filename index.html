@@ -7,7 +7,7 @@
 
 
             <!--Title-->
-                <title>Melvyn Thomas Ling - Web Developer Portfolio</title>
+                <title>Melvyn Ling - Web Developer Portfolio</title>
 
             <!--Favicon-->
                 <link rel="shortcut icon" href="img/favicon/favicon-32x32.png">
@@ -37,11 +37,42 @@
 
             
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="65">
     <!-- PRELOADER -->
     <div id="preloader">
                 <div id="status">&nbsp;</div>
         </div> 
+
+    <!--Header Starts-->
+        <header>
+            <nav class="navbar navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="container">
+                    <div class="site-nav-wrapper">
+                        <div class="navbar-header">
+                            <!--Logo-->
+                            <a href="#home" class="navbar-brand smooth-scroll">
+                                <h2><strong>Melvyn </strong> Ling</h2>
+                            </a>
+                        </div>
+                        <!--Main Menu-->
+                        <div class="container">
+                            <div class="collapse navbar-collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a class="smooth-scroll" href="#home">Home </a></li>
+                                    <li><a class="smooth-scroll" href="#about">About</a></li>
+                                    <li><a class="smooth-scroll" href="#skills">Skills</a></li>
+                                    <li><a class="smooth-scroll" href="#portfolio">Portfolio</a></li>
+                                    <li><a class="smooth-scroll" href="#contact">Contact Me</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    <!--Header Ends-->
 
     <!-- HOME SECTION -->
     <section id="home">
@@ -62,8 +93,10 @@
                         <div id="home-content-inner" class="text-center">
 
                             <div id="home-heading">
-                                <h1 id="home-heading-1">Melvyn Thomas Ling</h1><br>
-                                <h1 id="home-heading-2">Full Stack -  <span>Web Developer</span></h2>
+                                <h1 id="home-heading-1"><span>Melvyn</span> Ling</h1><br>
+                                <span class="strips text-center"></span>
+                                <br>
+                                <h1 id="home-heading-2">Full Stack <br><span>Web Developer</span></h1>
                             </div>
 
                             <div id="home-text">
@@ -72,12 +105,12 @@
 
                             <div id="home-btn">
                                 <div class="row">
-                                <a class="btn btn-general btn-home" href="#about" title="about" role="button">About</a>
+                                <a class="btn btn-general btn-home smooth-scroll" href="#about" title="about" role="button">About</a>
                         
-                                <a class="btn btn-general btn-home" href="#contact" title="Contact" role="button">Contact</a>
+                                <a class="btn btn-general btn-home smooth-scroll" href="#contact" title="Contact" role="button">Contact</a>
                                 
                                 
-                                <a class="btn btn-general resumebtn"  href="#Resume" title="Resume" role="button">Resume</a>
+                                <a class="btn btn-general resumebtn smooth-scroll"  href="#Resume" title="Resume" role="button">Resume</a>
                             </div>
                             
                             </div>
@@ -86,11 +119,12 @@
 
                     </div>
                 <!-- ARROW DOWN -->
-                <a href="#about" id="arrow-down">
+                <a href="#about" id="arrow-down" class="smooth-scroll">
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
                 </a>   
     </section>
     <!-- HOME ENDS-->
+
     <!-- ABOUT SECTION -->
     <section id="about">
                 <!-- ABOUT1 SECTION -->
@@ -493,7 +527,7 @@
                             <h3>Get More out of life with Creativty</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, doloremque explicabo? Consequatur cupiditate hic iure, nostrum vitae consectetur eveniet dolorem voluptatum porro tenetur aspernatur nobis optio vero? Nulla, amet aliquid.</p>
                                 <div id="services2-btn">
-                                    <a class="btn btn-general btn-red" href="#contact" title="Get in Touch" role="button">Get in Touch</a>
+                                    <a class="btn btn-general btn-red smooth-scroll" href="#contact" title="Get in Touch" role="button">Get in Touch</a>
                                 </div>
 
                         </div>
@@ -803,8 +837,8 @@
                         <!--Stat 1-->
                         <div class="stats-item text-center">
                             <i class="fas fa-code"></i>
-                            <h3 class="counter">10,000</h3>
-                            <p>Lines of Code typed</p>
+                            <h3 class="counter">20,000</h3>
+                            <p>Lines of Code typed out</p>
                         
                         </div>
                     </div>
@@ -813,7 +847,7 @@
                         <div class="stats-item text-center">
                                 <i class="fas fa-code-branch"></i>
                             <h3 class="counter">26</h3>
-                            <p>Total GitHub Repositories</p>
+                            <p>GitHub Repositories</p>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -821,14 +855,14 @@
                         <div class="stats-item text-center">
                                 <i class="fas fa-clock"></i>
                                 <h3 class="counter">262800</h3>
-                                <p>Roughly hours alive</p>
+                                <p>hours alive on this Earth</p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <!--Stat 4-->
                         <div class="stats-item text-center">
                                 <i class="fas fa-calendar-alt"></i>
-                                <h3 class="counter">8760</h3>
+                                <h3 class="counter">8,760</h3>
                                 <p>Hours spent coding away</p>
                         </div>
                     </div>
@@ -836,9 +870,7 @@
             </div>
         </div>
     </section>
-
     <!--Stats counter ends-->
-
 
     <!--CONTACT SECTION BEGINS-->
     <section id="contact">
@@ -918,7 +950,7 @@
                                 <textarea class="form-control" id="message" placeholder="Please enter your message here..."></textarea>
                             </div>
                             <div id="-btn">
-                                <a class="btn btn-general btn-red" href="#" title="text" role="button">Send</a>
+                                <a class="btn btn-general btn-red text-right" href="#" title="text" role="button">Send</a>
                             </div>
 
 
@@ -951,7 +983,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p>Copyright &copy; 2019 All Rights Reservered by <span>Melvyn Thomas Ling</span></p>
+                    <p>Copyright &copy; 2019 All Rights Reservered by <span>Melvyn Ling</span></p>
                     <span class="strips"></span>
                     <ul class="social-list">
                             <li><a href="#"><i class="fab fa-facebook-f"></i></i></a></li>
@@ -962,10 +994,14 @@
                 </div>
             </div>
         </div>
-    
-
+       <!--back to top button-->
+       <a href="#home" id="back-to-top" class="btn btn-sm btn-red btn-back-to-top smooth-scroll" title="home" role="button">
+            <i class="fas fa-angle-double-up"></i>
+        </a>
     </footer>
     <!--Footer Ends-->
+
+     
 
     </body>  
             <!--Custom JQuery-->
@@ -984,8 +1020,12 @@
                 <script src="js/isotope/isotope.pkgd.min.js"></script>
             <!--Magnific Popup JS plugin-->
                 <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+            <!--Counter Plugin-->
+                <script src="js/counter/jquery.counterup.min.js"></script>
             <!--Google Map JS-->
                 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXgGwmZ4_DsoeditWBlTklR2dcrvldu6Q&callback=initMap" type="text/javascript"></script>
+            <!--Easing-->
+                <script src="js/easing/jquery.easing.1.3.js"></script>
             <!--Custom JS-->
                 <script src="js/script.js"></script>
 
