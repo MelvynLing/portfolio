@@ -15,14 +15,21 @@ $(window).on("load", function() { // <-- this makes sure the whole site is loade
 =========================================*/ 
 $(function(){
     $("#headshots").owlCarousel( {
-        items: 2,
         autoplay: true,
         smartSpeed: 700,
         loop: true,
         autoplayHoverPause: true,
         nav: true,
         dots: false,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]  
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsiveClass:true,
+        responsive: {
+            0:{
+            items: 1
+        },
+            786: {
+            items: 2
+        } }
     });
   });
 /*=======================================
