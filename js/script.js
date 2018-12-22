@@ -196,3 +196,23 @@ $(function () {
 
     });
 });
+
+/*=======================================
+-----------------------------------------   
+        smooth scrolling animation
+-----------------------------------------
+=========================================*/
+
+    $(function () {
+        //shows mobile navigation
+        $('#mobile-nav-open-btn').click(function(){
+            $('#mobile-nav').css("height","100%");
+        //hides mobile nav
+        $('#mobile-nav-close-btn, #mobile-nav a').click(function(){
+            $('#mobile-nav').css("height","0%");
+            });
+        });
+    });
+
+
+        
