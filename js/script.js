@@ -139,6 +139,16 @@ $(window).on("load", function () {
     marker.addListener('click', function () {
         infowindow.open(map,marker);
     });
+    //setting the center of map on resize.
+    //resizes map w/ evenlistener       // listening for the window/screen resize for googlemap
+    google.maps.event.addDomListener(window, 'resize', function () {
+        //once this happened, we are grabbing the center coordinates of the map 
+        var center = map.getCenter();
+        //this triggers the googlemap on resize to...
+        google.maps.event.trigger(map,'resize');
+        //set the center again to the old/original center coordinates
+        map.setCenter(center);
+    });
 });
 /*=======================================
 -----------------------------------------   
