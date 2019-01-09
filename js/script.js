@@ -27,7 +27,7 @@ $(function(){
             0:{
             items: 1
         },
-            786: {
+            990: {
             items: 2
         } }
     });
@@ -41,11 +41,11 @@ $(function(){
 $(function(){
     $("#progress-elements").waypoint(function(){
         $(".progress-bar").each(function(){
-            $(this).animate({width: $(this).attr("aria-valuenow") + "%"}, 1000);
+            $(this).animate({width: $(this).attr("aria-valuenow") + "%"}, 5000);
         });   
         this.destroy();
     }, {
-        offset: 'bottom-in-view'
+        offset: 'middle-in-view'
     });
 });
 /*=======================================
@@ -100,6 +100,7 @@ $(function () {
     });
 
 });
+
 /*=======================================
 -----------------------------------------   
         Counter Plugin
@@ -109,7 +110,7 @@ $(function () {
 $(function () {
     $(".counter").counterUp({
         delay: 10,
-        time: 2000    
+        time: 1000    
     })
 });
 /*=======================================
@@ -213,6 +214,25 @@ $(function () {
             });
         });
     });
+/*=======================================
+-----------------------------------------   
+           Animations
+-----------------------------------------
+=========================================*/
+
+//ANIMATIONS ON SCOLL
+$(function () {
+    new WOW().init();
+});
+
+$(window).on('load', function () {
+    //home section
+    $("#home-heading-1").addClass("animated fadeInDown");
+    $("#home-strips").addClass("animated zoomIn");
+    $("#home-heading-2").addClass("animated fadeInUp");
+    $("#home-text").addClass("animated fadeInLeft");
+    $("#home-btn").addClass("animated fadeInRight");
+    $("#arrow-down i").addClass("animated fadeInDown infinite");
 
 
-        
+});

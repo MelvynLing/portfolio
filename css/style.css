@@ -190,6 +190,9 @@ section {
     font-size: 22px;
     display: none;
 }
+.tab {
+    margin-left: 40px; 
+}
  /* =======================================
 -----------------------------------------
             ARROW - CSS
@@ -297,6 +300,7 @@ section {
     padding: 80px 30px;
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .2);
     box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    height:440px;
 }
 .about-item i {
     font-size: 45px;
@@ -316,7 +320,7 @@ section {
     border: none;
 }
 .about-item p {
-    margin-top: 20px;
+    margin-top: 35px;
 }
 
 .about-item:hover {
@@ -347,10 +351,14 @@ section {
     -webkit-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out;
 }
-
+.about-item h3,
+.about-item p {
+    -webkit-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
  /* =======================================
 -----------------------------------------
-        ABOUT2 TEAM SECTION - CSS
+        ABOUT2 skill SECTION - CSS
 -----------------------------------------
 ========================================= */ 
 
@@ -364,6 +372,9 @@ section {
 }
 .headshot:hover .headshot-overlay{
     opacity: 1;
+}
+.headshot #skill1:hover #skill1pb{
+    font-weight: 900px;
 }
 .headshot-overlay {
     background-color: rgba(33 ,34,38, .7);
@@ -380,18 +391,45 @@ section {
 .headshot-overlay-info {
     width: 100%;
     height: 100%;
-    padding: 80px 0;
+    padding-top:50px
 }
 
-.headshot-overlay-info h6 { 
+.headshot-overlay-info h6,
+.skilltext h6 
+ { 
     color: #d21b32;
-    font-size: 16px;
+    font-size: 20px;
     margin: 0;
+    font-weight: 900;
+    font-variant: small-caps;
+    /* text-transform: uppercase; */
 
 }
 
-.headshot-overlay-info p { 
+.headshot-overlay-info p,
+.skilltext p 
+ { 
     color: #fff;
+    font-weight: 500;
+}
+
+.skilltext {
+    width: 100%;
+    height: 100%;
+    padding:20px 3px 0;
+   
+}
+.skilltext a {
+    text-decoration-color: #d21b32;
+}
+.strips {
+    display: inline-block;
+    border-top: .5px solid #fff;
+    border-bottom: .5px solid #fff;
+    height: 4px;
+    width: 40px;
+    margin: 11px auto 5px auto
+
 }
  /* =======================================
 -----------------------------------------
@@ -509,15 +547,15 @@ ul.social-list li:nth-child(4) a:hover {
     
 }
 
-#quote .content-box-lg{
+#quote .content-box-md{
     background:rgba(0, 0, 0, 0.4)
 }
 
-#inspire-quoteofday p {
+#inspire-quoteofday  {
     color: #fff;
     font-size: 38px;
     line-height: 55px;
-    margin: -50px 40px;
+    margin: 0;
 }
  #left {
      color: #fff;
@@ -540,7 +578,7 @@ ul.social-list li:nth-child(4) a:hover {
     font-size: 24px;
     font-weight: 500;
     line-height: 55px;
-    margin-top: 100px;
+    margin: 50px 0 0 0 ;
 }
 
  /* =======================================
@@ -610,6 +648,16 @@ ul.social-list li:nth-child(4) a:hover {
     padding: 5px 30px;
     
 }
+#services-tabs ul li span{
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    color: #d21b32;
+    font-variant: small-caps;
+    /* text-transform: uppercase; */
+    font-weight: 200;
+    padding: 0;
+    text-decoration: none;
+}
 #services-tabs ul li a {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
@@ -664,7 +712,7 @@ ul.social-list li:nth-child(4) a:hover {
             Portfolio - CSS
 -----------------------------------------
 ========================================= */
-#portfolio .content-box-md {
+#portfolio .content-box-lg {
     padding-bottom: 0;
 }
 #portfolio .vertical-heading {
@@ -733,7 +781,7 @@ ul.social-list li:nth-child(4) a:hover {
     right: 0;
     background: rgba(14,14,17,0.9);
     cursor: -webkit-zoom-in;
-    cursor: zoom-in;
+    cursor: pointer;
     opacity: 0;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -874,9 +922,9 @@ ul.address-details {
 ul.address-details li {
     font-family: "Raleway", sans-serif;
     margin-top: 12px;  
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    /* display: -webkit-inline-box;
+    display: -ms-inline-flexbox; */
+    /* display: inline; */
 }
 ul.address-details li i {
     font-size: 20px;
@@ -889,7 +937,6 @@ ul.address-details li i {
     border: 1px solid #212226;
     text-align: center;
     margin-bottom: 25px;
-
 }
 #contactLeft ul.social-list li a:hover {
     color: #fff;
@@ -951,7 +998,8 @@ footer {
 footer p{ 
     color: #fff;
     line-height: 30px;
-    font-size: 20px;
+    font-size: 15px;
+    margin: 0;
 }
 footer p span {
     color: #d21b32;
@@ -1168,6 +1216,48 @@ footer {
 }
 
 
+
+ /* =======================================
+-----------------------------------------
+animation
+-----------------------------------------
+========================================= */
+
+#home-heading-1, 
+#home-heading-2, 
+#home-strips, 
+#home-text, 
+#home-btn, 
+#arrow-down i{
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+#home-heading-1 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+#home-heading-2 {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+#home-strips {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+#home-text {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+#home-btn{
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+#arrow-down i {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
 /*============================================================================================================================*/
 /*----------------------------------------------------------------------------------------------------------------------------*/
 /*============================================================================================================================*/
@@ -1198,6 +1288,36 @@ footer {
     }
     .service-tab p {
         line-height: 20px;
+    }
+    .headshot-overlay-info {
+        width: 100%;
+        height: 100%;
+        padding: 50px 0;
+    }
+    
+    .headshot-overlay-info h6,
+    .skilltext h6 
+     { 
+        font-size: 17px;
+        font-weight: 500;
+    }
+    
+    .headshot-overlay-info p,
+    .skilltext p 
+     { 
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px
+    }
+    
+    .skilltext {
+        width: 100%;
+        height: 100%;
+        padding: 7px 5px;
+    }
+    .strips {
+        margin: 0 auto 0 auto
+    
     }
 }
 /*Small Devices -Portrait Tablets/Smaller Destops/etc */
@@ -1235,9 +1355,7 @@ footer {
     .vertical-heading h2 {
         font-size: 29px
     }
-    .about-item hr {
-        width: 100px
-    }
+
     #quote #inspire-quoteofday p {
         font-size: 25px;
         line-height: 30px
@@ -1307,7 +1425,31 @@ footer {
     #mobile-nav-open-btn {
         display:hidden;
     }
-}
+    .headshot-overlay-info {
+        margin: 20px 0 0 0;
+    }
+    
+    .headshot-overlay-info p,
+    .skilltext p 
+     { 
+        font-weight: 500;
+        font-size: 15px;
+        margin: 3px;
+    }
+    
+    .skilltext {
+        width: 100%;
+        height: 100%;
+        margin: 40px 5px;
+    }
+    .about-item {
+        height:520px;
+    }
+    .about-item hr {
+        width: 120px
+    }
+
+
 
 /*Extra Small Devices - Phones/Tablets/etc */
 @media (max-width: 767px) {
@@ -1371,12 +1513,9 @@ footer {
         line-height: normal;
         margin: 0 0 40px 0;
     }
-    .about-item {
-        padding: 55px 30px;
-        margin-bottom: 35px;
-    }
+
     .about-item hr {
-        width: 50px
+        width: 30px
     }
     .about-item i{
         font-size: 30px;
@@ -1543,6 +1682,31 @@ footer {
     .navbar{
         padding: 20px 0;
     }
+    
+.headshot-overlay-info {
+    margin: 20px 0 0 0;
+}
+
+.headshot-overlay-info h6,
+.skilltext h6 
+ { 
+    font-weight: 500;
+    font-size: 45px;
+    margin: 3px;
+}
+.headshot-overlay-info p,
+.skilltext p 
+ { 
+    font-weight: 500;
+    font-size: 15px;
+    margin: 3px;
+}
+
+.skilltext {
+    width: 100%;
+    height: 100%;
+    margin: 40px 5px;
+}
 
 }
     

@@ -9,6 +9,10 @@
             <!--Title-->
                 <title>Melvyn Ling - Web Developer Portfolio</title>
 
+            <!--Basic SEO-->
+                <meta name="description" content="Melvyn Ling's Web Development Portfolio - created using HTML5, CSS3, Jquery, and bootstrap frameworks">
+                <meta name="keywords" content="Freelance web development, Freelance web developer, web development, web developer, HTML5, CSS3, JS, JQuery, bootstrap, Web Design, Responsive Design, Creative Design, Fullstack, Front-end, back-end">
+
             <!--Favicon-->
                 <link rel="shortcut icon" href="img/favicon/favicon-32x32.png">
 
@@ -30,6 +34,9 @@
             
             <!--Magnific Popup CSS-->
                 <link rel="stylesheet" href="css/magnific-popup/magnific-popup.css"> 
+
+            <!--Animate CSS-->
+                <link rel="stylesheet" href="css/animate/animate.css">
 
             <!--Custom CSS/Styling-->
                 <link rel="stylesheet" href="css/style.css">
@@ -101,45 +108,31 @@
                     <source src="video/melporfolio.ogv" type="video/ogv"/>
                     <source src="video/melporfolio.webm" type="video/webm"/>
                 </video>
-
                 <!-- HOME OVERLAY -->
                 <div id="home-overlay"></div>
-
                     <!-- HOME CONTENT -->
                     <div id="home-content">
-
                         <div id="home-content-inner" class="text-center">
-
                             <div id="home-heading">
                                 <h1 id="home-heading-1"><span>Melvyn</span> Ling</h1><br>
-                                <span class="strips text-center"></span>
+                                <span id="home-strips" class="strips text-center"></span>
                                 <br>
                                 <h1 id="home-heading-2">Full Stack <br><span>Web Developer</span></h1>
                             </div>
-
                             <div id="home-text">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, quis? Nemo sapiente quis voluptate nostrum commodi? Laudantium voluptates a cupiditate laboriosam doloremque facere quod aliquam.</p>
+                                <p>With an infinite curiosity and a dedicated and persistant work ethic, I am the web developer you are looking for to solve your web needs.</p>
                             </div>
-
                             <div id="home-btn">
                                 <div class="row">
-                                <a class="btn btn-general btn-home smooth-scroll" href="#about" title="about" role="button">About</a>
-                        
-                                <a class="btn btn-general btn-home smooth-scroll" href="#contact" title="Contact" role="button">Contact</a>
-                                
-                                
-                                <a class="btn btn-general resumebtn smooth-scroll"  href="#Resume" title="Resume" role="button">Resume</a>
+                                    <a class="btn btn-general btn-home smooth-scroll" href="#about" title="about" role="button">About</a>                  
+                                    <a class="btn btn-general btn-home smooth-scroll" href="#contact" title="Contact" role="button">Contact</a>
+                                    <a class="btn btn-general resumebtn smooth-scroll"  href="#Resume" title="Resume" role="button">Resume</a>
+                                </div>
                             </div>
-                            
-                            </div>
-
                         </div>
-
                     </div>
                 <!-- ARROW DOWN -->
-                <a href="#about" id="arrow-down" class="smooth-scroll">
-                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </a>   
+                <a href="#about" id="arrow-down" class="smooth-scroll"><i class="fa fa-angle-down" aria-hidden="true"></i></a>   
     </section>
     <!-- HOME ENDS-->
 
@@ -151,7 +144,7 @@
                         <div class="container">
                             <div class="row">
                                 <!-- ABOUT1 LEFT SIDE -->
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-4 col-sm-4 wow slideInLeft" data-wow-duration="1s">
                                     <div id="aboutLeft">
                                         <div class="vertical-heading">
                                             <h5>Who Am I?</h5>
@@ -161,17 +154,17 @@
                                     </div>
                                 </div>
                                 <!-- ABOUT1 RIGHT SIDE -->
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-8 col-sm-8 wow slideInRight" data-wow-duration="2s">
                                         <div id="aboutRight">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis facilis sapiente et quo. Consequatur labore voluptatem debitis ipsam perferendis, aliquid autem et. Perspiciatis maiores facilis aliquam consequuntur ipsam ipsa, recusandae deserunt tempora perferendis molestias qui.</p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem officia et quas illo, eligendi eaque error dolores quo consectetur animi repellendus laboriosam aperiam? Modi exercitationem harum sequi voluptatum laboriosam reiciendis doloremque, iusto possimus? At delectus deserunt iste itaque debitis labore, minima consequuntur earum esse hic, quia molestiae sit eum recusandae? Repellat, omnis dicta ratione eos esse quam ipsa. Magnam quisquam dicta eveniet architecto ea? Esse.</p>
+                                            <p> <span class="tab"></span>My name is Melvyn Ling and I am a junior Full Stack Developer based out of Southern Ontario. I am an advid learner with an ever curious mindset, I've always been one to look for and exploring new horizons, which is exactly how I got involved in Web Development. I got all caught up in web development about 2 years ago - I had taken a course online and absolutely fell in love with it. Since then, I've been doing all that I can to strengthen my web development skillset, as well as garner new skills. In November of 2018, I graduated from the University of Toronto's BTS Coding Bootcamp, a 6 months intensive web development program aimed at making one career ready for the web development industry.</p>
+                                            <p> <span class="tab"></span>In addition of this, I also have a BA in Political Science from the McMaster University. While not an ordinary background for a web developer, I believe that it provides me with a number of strengths. One of which would be interpersonal and communication skills, which allow me to connect to others and be perceptive to their needs, wants, and views. It has also provided me with a strong critical thinking background, allowing me to question which approaches are best suited and why they are suited for a particular web development need. While not typical for a web developer, my educational background as certainly made me who I am today allowing me to be creative and think outside of the box of solutions.  </p>
                                         </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-12 wow fadeInUp" data-wow-duration="2.5s">
                                     <div id="about-bottom">
-                                        <img src="img/about/dummyabout.png" alt="about me" class="img-responsive" >
+                                        <img src="img/about/aboutmel.jpg" alt="Melvyn Ling - Web Developer" class="img-responsive" >
                                     </div>
                             </div>
                         </div>
@@ -183,26 +176,30 @@
                         <div class="container">
                             <div class="row">
 
-                                <div class="col-md-4 col-sm-4" >
+                                <div class="col-md-4 col-sm-4 wow fadeInLeft" >
                                     <div class="about-item text-center">
                                         <i class="fas fa-rocket"></i>
                                         <h3>Mission</h3>
                                         <hr>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus placeat aliquid minus dignissimos totam sequi maxime eum voluptatum doloremque? Dignissimos?</p>
+                                        <p>To provide with users with effective and practical user experiences, to create web based products that are intuitive and easy to use.  To create web based products that are exciting, interesting and fascinating.</p>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-sm-4"><div class="about-item text-center">
+                                <div class="col-md-4 col-sm-4 wow fadeIn" data-wow-duration="2.5s">
+                                    <div class="about-item text-center">
                                         <i class="fas fa-eye"></i>
                                         <h3>Vision</h3>
                                         <hr>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus placeat aliquid minus dignissimos totam sequi maxime eum voluptatum doloremque? Dignissimos?</p>
-                                    </div></div>
-                                <div class="col-md-4 col-sm-4"><div class="about-item text-center">
+                                        <p>I am goal driven. I set precise deadlines for myself that are needed to complete the tasks at hand. My vision for this is what propells me forward and keeps me I have a determined mindset that will not give up until my vision is complete</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 wow fadeInRight">
+                                    <div class="about-item text-center">
                                         <i class="fas fa-pencil-alt"></i>
                                         <h3>Passion</h3>
                                         <hr>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus placeat aliquid minus dignissimos totam sequi maxime eum voluptatum doloremque? Dignissimos?</p>
-                                    </div></div>
+                                        <p>Being an avid learner and given the ever changing and growing landspaces of this industry, web development is a passion of mine. I dedicate myself to creating useful and practical and intuitive web experiences from both the front and back end of things.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -217,135 +214,263 @@
                         <!-- Skills -->
                         <div class="row">
                             <!-- Skills Left -->
-                            <div class="col-md-6 col-sm-6">
+                            <div class="col-md-6 col-sm-6 wow slideInLeft" data-wow-duration="1s">
                                 <div id="skills-left">
                                         <div class="vertical-heading">
                                                 <h5>Who Am I?</h5>
                                                 <h2>These are <strong>My</strong><br>
                                                     Skills... </h2>
                                         </div>
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ab omnis nostrum odit ullam doloremque repellat libero atque quisquam fugiat?</p>
+                                        <p>Over the course of the past year, I have been able to really focus, hone in, and develop the various skills needed to become an efficent, effective and creative developer. Take a look at some of the skills I have been able to develop and foster since taking the big dive into Web Development.</p>
                                 </div>
                             </div>
                             <!-- Skills Right -->
-                            <div class="col-md-6 col-sm-6">
+                            <div class="col-md-6 col-sm-6 wow slideInRight" data-wow-duration="1s">
                                 <div class="text-center">
                                 <div id="headshots" class="owl-carousel owl-theme">
+                                    
                                     <!--Headshot 1-->
                                     <div class="headshot">
-                                        <img src="img/headshots/dummy2.png" alt="headshot1" class="img-responsive">
+                                        <img src="img/headshots/html.png" alt="headshot1" class="img-responsive">
                                         <div class="headshot-overlay">
-                                                <div class="headshot-overlay-info text-center">
-                                                        <h6>Melvyn Ling</h6>
-                                                        <p>Full Stack Web Developer</p>
-                                                        <ul class="social-list">
-                                                                <li><a href="#"><i class="fab fa-facebook-f"></i></i></a></li>
-                                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                                                <li><a href="#"><i class="fab fa-github"></i></a></li>
-                                                        </ul>
+                                                <div class="text-center skilltext">
+                                                       <a href="https://www.w3schools.com/html/html_intro.asp"><h6>HTML5</h6></a>
+                                                       <span class="strips"></span>
+                                                        <p>Not really a programming language - HTML stands for Hyper Text Markup Language. Its elements are the building blocks of any web page out there. HTML uses tags to describes the structure of a webpage and render it on to a viewport. </p>
                                                     </div>
                                                 </div>
 
                                     </div> 
+                                    <div class="headshot">
+                                            <img src="img/headshots/dummy2.png" alt="headshot1" class="img-responsive">
+                                            <div class="headshot-overlay">
+                                                    <div class="headshot-overlay-info text-center">
+                                                            <h6>Melvyn Ling</h6>
+                                                            <span class="strips"></span>
+                                                            <p>Full Stack Web Developer</p>
+                                                            <ul class="social-list">
+                                                                    <li><a href="#"><i class="fab fa-facebook-f" ></i></a></li>
+                                                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                                                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+    
+                                        </div> 
                                     <!--Headshot 2-->
                                     <div class="headshot">
-                                        <img src="img/headshots/dummy2.png" alt="headshot1" class="img-responsive">
+                                        <img src="img/headshots/css.png" alt="headshot1" class="img-responsive">
                                         <div class="headshot-overlay">
-                                                <div class="headshot-overlay-info text-center">
-                                                        <h6>Melvyn Ling</h6>
-                                                        <p>Full Stack Web Developer</p>
-                                                        <ul class="social-list">
-                                                                <li><a href="#"><i class="fab fa-facebook-f"></i></i></a></li>
-                                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                                                <li><a href="#"><i class="fab fa-github"></i></a></li>
-                                                        </ul>
+                                                <div class="skilltext text-center">
+                                                        <a href="https://www.w3schools.com/css/css_intro.asp"><h6>CSS3</h6></a>
+                                                        <span class="strips"></span>
+                                                        <p>Short for Cascading Style Sheets, CSS often describes how HTML elements are to be presented on a screen. It is used to define the style of your page, including design, layout, and variations in appearance for various devices and screen sizes. </p>
                                                     </div>
                                                 </div>
 
                                     </div>
-                                    <!--Headshot 3-->
                                     <div class="headshot">
                                             <img src="img/headshots/dummy2.png" alt="headshot1" class="img-responsive">
                                             <div class="headshot-overlay">
                                                     <div class="headshot-overlay-info text-center">
                                                             <h6>Melvyn Ling</h6>
+                                                            <span class="strips"></span>
                                                             <p>Full Stack Web Developer</p>
                                                             <ul class="social-list">
-                                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></i></a></li>
+                                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                                                     <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                                                                     <li><a href="#"><i class="fab fa-github"></i></a></li>
                                                             </ul>
+                                                        </div>
+                                                    </div>
+    
+                                        </div> 
+                                    <!--Headshot 3-->
+                                    <div class="headshot">
+                                            <img src="img/headshots/js.png" alt="headshot1" class="img-responsive">
+                                            <div class="headshot-overlay">
+                                                    <div class="skilltext text-center">
+                                                            <a href="https://www.w3schools.com/js/js_intro.asp"><h6>JavaScript</h6></a>
+                                                            <span class="strips"></span>
+                                                            <p>JavaScript is a programming language. To use JS effectively, one needs a solid understanding of HTML and CSS. JS in an object-oriented programming language that handles the functionality and interactivity of your webpage.  </p>
                                                         </div>
                                                     </div>
 
                                         </div> 
+                                        <div class="headshot">
+                                                <img src="img/headshots/dummy2.png" alt="headshot1" class="img-responsive">
+                                                <div class="headshot-overlay">
+                                                        <div class="headshot-overlay-info text-center">
+                                                                <h6>Melvyn Ling</h6>
+                                                                <span class="strips"></span>
+                                                                <p>Full Stack Web Developer</p>
+                                                                <ul class="social-list">
+                                                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                                                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+        
+                                            </div> 
                                     <!--Headshot 4-->
+                                    <div class="headshot">
+                                            <img src="img/headshots/node.png" alt="headshot1" class="img-responsive">
+                                            <div class="headshot-overlay">
+                                                    <div class="skilltext text-center">
+                                                            <a href="https://www.w3schools.com/nodejs/nodejs_intro.asp"><h6>Node JS</h6></a>
+                                                            <span class="strips"></span>
+                                                            <p>NodeJS is an open-source server enviroment.  It is used to generate page content, as well as create, open, read, write, delete, and close files on the server and is very memory efficent. It can also collect, delete, and modify data in your database.</p>
+                                                        </div>
+                                                    </div>
+                                          
+                                        </div>  
+                                        <div class="headshot">
+                                                <img src="img/headshots/dummy2.png" alt="headshot1" class="img-responsive">
+                                                <div class="headshot-overlay">
+                                                        <div class="headshot-overlay-info text-center">
+                                                                <h6>Melvyn Ling</h6>
+                                                                <span class="strips"></span>
+                                                                <p>Full Stack Web Developer</p>
+                                                                <ul class="social-list">
+                                                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                                                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+        
+                                            </div> 
+                                <!--Headshot 5-->
+                                <div class="headshot">
+                                        <img src="img/headshots/database.png" alt="headshot1" class="img-responsive">
+                                        <div class="headshot-overlay">
+                                                <div class="skilltext text-center">
+                                                        <a href="https://www.w3schools.com/sql/sql_intro.asp"><h6>Databases - MySQL/MongoDB</h6></a>
+                                                        <span class="strips"></span>
+                                                        <p> A database is designed to be managed and accessed through a web page. Web Developers can manage this collection of data and present analytical results based on the data in the Web database application.</p>
+                                                    </div>
+                                                </div>
+                                    </div> 
                                     <div class="headshot">
                                             <img src="img/headshots/dummy2.png" alt="headshot1" class="img-responsive">
                                             <div class="headshot-overlay">
                                                     <div class="headshot-overlay-info text-center">
                                                             <h6>Melvyn Ling</h6>
+                                                            <span class="strips"></span>
                                                             <p>Full Stack Web Developer</p>
                                                             <ul class="social-list">
-                                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></i></a></li>
+                                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                                                     <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                                                                     <li><a href="#"><i class="fab fa-github"></i></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
-                                          
-                                        </div>  
-                                <!--Headshot 5-->
+    
+                                        </div> 
+                                <!--Headshot 6-->
+                                <div class="headshot">
+                                        <img src="img/headshots/angular.png" alt="headshot1" class="img-responsive">
+                                        <div class="headshot-overlay">
+                                                <div class="skilltext text-center">
+                                                        <a href="https://www.w3schools.com/angular/angular_intro.asp"><h6>AngularJS</h6></a>
+                                                        <span class="strips"></span>
+                                                        <p>AngularJS is a JavaScript framework. It lets you extend HTML with HTML attributes called directives, which offers functionality to HTML applications. AngularJS provides built-in directives and user defined directives. It is perfect for Single Page Applications. </p>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                    <div class="headshot">
+                                            <img src="img/headshots/dummy2.png" alt="headshot1" class="img-responsive">
+                                            <div class="headshot-overlay">
+                                                    <div class="headshot-overlay-info text-center">
+                                                            <h6>Melvyn Ling</h6>
+                                                            <span class="strips"></span>
+                                                            <p>Full Stack Web Developer</p>
+                                                            <ul class="social-list">
+                                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                                                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+    
+                                        </div> 
+                                <!--Headshot 7-->
+                                <div class="headshot">
+                                            <img src="img/headshots/react.png" alt="headshot1" class="img-responsive">
+                                            <div class="headshot-overlay">
+                                                    <div class="skilltext text-center">
+                                                            <a href=""><h6>ReactJS</h6></a>
+                                                            <span class="strips"></span>
+                                                            <p>ReactJS is a JavaScript library created by Facebook. It is a User Interface (UI) library. It is a tool for building UI components. It uses JSX to do so (an XML/HTML extension to Javascript). Very similar to Angular, React is excellent for Single Page Applications. </p>
+                                                    </div>
+                                        </div> 
+                                </div>
                                 <div class="headshot">
                                         <img src="img/headshots/dummy2.png" alt="headshot1" class="img-responsive">
                                         <div class="headshot-overlay">
                                                 <div class="headshot-overlay-info text-center">
                                                         <h6>Melvyn Ling</h6>
+                                                        <span class="strips"></span>
                                                         <p>Full Stack Web Developer</p>
                                                         <ul class="social-list">
-                                                                <li><a href="#"><i class="fab fa-facebook-f"></i></i></a></li>
+                                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                                                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                                                 <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                                                                 <li><a href="#"><i class="fab fa-github"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
+
                                     </div> 
-                                    <!--Headshot 6-->
+                                <!--Headshot 8-->
                                     <div class="headshot">
-                                        <img src="img/headshots/dummy2.png" alt="headshot1" class="img-responsive">
-                                        <div class="headshot-overlay">
-                                                <div class="headshot-overlay-info text-center">
-                                                        <h6>Melvyn Ling</h6>
-                                                        <p>Full Stack Web Developer</p>
-                                                        <ul class="social-list">
-                                                                <li><a href="#"><i class="fab fa-facebook-f"></i></i></a></li>
-                                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                                                <li><a href="#"><i class="fab fa-github"></i></a></li>
-                                                        </ul>
+                                            <img src="img/headshots/python.png" alt="headshot1" class="img-responsive">
+                                            <div class="headshot-overlay">
+                                                    <div class="skilltext text-center">
+                                                            <a href=""><h6>Python</h6></a>
+                                                            <span class="strips"></span>
+                                                            <p>Python is an object-oriented, high-level programming language. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting language to connect existing components together.</p>
+                                                        
+                                                        </div>
                                                     </div>
-                                                </div>
+                                        </div>      
+                                        <div class="headshot">
+                                                <img src="img/headshots/dummy2.png" alt="headshot1" class="img-responsive">
+                                                <div class="headshot-overlay">
+                                                        <div class="headshot-overlay-info text-center">
+                                                                <h6>Melvyn Ling</h6>
+                                                                <span class="strips"></span>
+                                                                <p>Full Stack Web Developer</p>
+                                                                <ul class="social-list">
+                                                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                                                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                            </div>                              
                                     </div>
-                                </div>
-                                
                                 </div>
                             </div>
                         </div>
                         <div id="progress-elements">
                             <!--Prgress Bars-->
-                            <div class="row">
+                            <div class="row wow fadeInUp">
                                 <div class="col-md-6  col-sm-6">
                                     <!--1st skill-->
                                     <div class="skill">
-                                        <h4>Skill 1</h4>
+                                        <h4>HTML5</h4>
                                             <div class="progress">
-                                                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
-                                                  <span>80%</span>
+                                                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                                  <span>97%</span>
                                                 </div>
                                             </div>
                                     </div>
@@ -353,10 +478,10 @@
                                 <div class="col-md-6  col-sm-6">
                                     <!--2nd skill-->
                                     <div class="skill">
-                                        <h4>Skill 2</h4>
+                                        <h4>CSS3</h4>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                                              <span>70%</span>
+                                            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                              <span>93%</span>
                                             </div>
                                         </div></div>
                                     
@@ -364,10 +489,10 @@
                                 <div class="col-md-6  col-sm-6">
                                     <!--3rd skill-->
                                     <div class="skill">
-                                            <h4>Skill 3</h4>
+                                            <h4>JavaScript</h4>
                                             <div class="progress">
-                                                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
-                                                  <span>75%</span>
+                                                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                                  <span>95%</span>
                                                 </div>
                                             </div>
                                     </div>
@@ -375,10 +500,10 @@
                                 <div class="col-md-6  col-sm-6">
                                     <!--4th skill-->
                                     <div class="skill">
-                                            <h4>Skill 4</h4>
+                                            <h4>NodeJS</h4>
                                             <div class="progress">
-                                                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
-                                                  <span>80%</span>
+                                                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                                  <span>96%</span>
                                                 </div>
                                             </div>
                                     </div>
@@ -386,7 +511,7 @@
                                 <div class="col-md-6 col-sm-6">
                                     <!--5th skill-->
                                     <div class="skill">
-                                            <h4>Skill 5</h4>
+                                            <h4>Databases - (MySQL & MongoDB)</h4>
                                             <div class="progress">
                                                 <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
                                                   <span>90%</span>
@@ -397,7 +522,7 @@
                                 <div class="col-md-6 col-sm-6">
                                     <!--6th skill-->
                                     <div class="skill">
-                                            <h4>Skill 6</h4>
+                                            <h4>ReactJS</h4>
                                             <div class="progress">
                                                 <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
                                                   <span>95%</span>
@@ -405,6 +530,28 @@
                                             </div>
                                     </div>
                                 </div>
+                                <div class="col-md-6 col-sm-6">
+                                        <!--7th skill-->
+                                        <div class="skill">
+                                                <h4>AngularJS</h4>
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                                      <span>90%</span>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <!--8th skill-->
+                                        <div class="skill">
+                                                <h4>Python</h4>
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                                      <span>85%</span>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -414,229 +561,180 @@
 
     <!-- Quote SECTION -->
     <section id="quote">
-                <div class="content-box-lg">
+                <div class="content-box-md">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
+                        <div class="row wow fadeIn" data-wow-duration="2s">
+                            <div class="col-md-1">
                                     <i class='fa fa-quote-left fa-3x' id='left'></i> 
+                            </div>
+                            <div id="inspire-quote" class=" col-md-10 text-center">
+                                    <h2><div id="inspire-quoteofday"></div></h2>
+                                </div>
+                            <div class="col-md-1">
                                     <i class='fa fa-quote-right fa-3x' id='right'></i>
-                                <div id="inspire-quote" class="text-center">
-                                <h2><div id="inspire-quoteofday"> </div>
-                                    <div id="inspire-quoteofdayauth"> </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-md-12 text-center">
+                                    <h3><div id="inspire-quoteofdayauth"> </div></h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                
     </section>
     <!-- Quote SECTION ENDS -->
 
     <!-- Services SECTION  -->
-    <section id="services">
+<section id="services">
                 <!--Services-1-->
-                <div id="services-1">
-                    <div class="content-box-lg">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12 text-center">
-                                        <div class="horizontal-heading">
-                                                <h5>What I offer</h5>
-                                                <h2>These are <strong>My</strong><br>
-                                                    Services... </h2>
-                                        </div>
-        
-                                    </div>
-                                </div>
-                                <div class="row">
-
-                                    <div class="col-md-7 col-sm-7">
-                                        <img src="img/services/laptop-lamp.png" alt="laptop" class="img-responsive">
-
-                                    </div>
-                                    <div class="col-md-5 col-sm-5"> 
-                                        <!--Service1-->
-                                        <div class="service">
-                                            <div class="row">
-                                                <div class="col-md-2 col-sm-2">
-                                                    <div class="icon text-right">
-                                                        <i class="fa fa-paint-brush"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-10 col-sm-10">
-                                                    <h5>Service 1</h5>
-                                                    <h4>Web Design</h4>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quidem eos quibusdam reiciendis dignissimos impedit.</p>
-                                                </div>
-                                            </div>
-                                            </div>
-                                            <!--Service2-->
-                                            <div class="service">
-                                            <div class="row">
-                                                    <div class="col-md-2 col-sm-2">
-                                                        <div class="icon text-right">
-                                                                <i class="fa fa-wrench    "></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-10 col-sm-10">
-                                                        <h5>Service 2</h5>
-                                                        <h4>Web Development</h4>
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quidem eos quibusdam reiciendis dignissimos impedit.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                                <!--Service3-->
-                                        <div class="service">
-                                                <div class="row">
-                                                        <div class="col-md-2 col-sm-2">
-                                                            <div class="icon text-right">
-                                                            <i class="fa fa-paper-plane"></i>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-10 col-sm-10">
-                                                            <h5>Service 3</h5>
-                                                            <h4>Digital Marketing</h4>
-                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quidem eos quibusdam reiciendis dignissimos impedit.</p>
-                                                        </div>
-        
-                                                    </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                    </div>
-                </div>
+               
                 <!--Services-2-->
                 <div id="service-2">
                     <div class="content-box-md">
+                            <div class="horizontal-heading text-center">
+                                    <h5>What I offer?</h5>
+                                    <h2>These are <strong>My<br>
+                                        Objectives... </strong></h2>
+                            </div>
                         <div id="services-tabs">
                                 <ul class="text-center">
-                                    <li><a href="#service-tab1">Creativity</a></li>
-                                    <li><a href="#service-tab2">Strategy</a></li>
-                                    <li><a href="#service-tab3">Design</a></li>
-                                    <li><a href="#service-tab4">Development</a></li>
+                                    <li><span>01 - </span><a href="#service-tab1"> Creativity</a></li>
+                                    <li><span>02 - </span><a href="#service-tab2">Strategy</a></li>
+                                    <li><span>03 - </span><a href="#service-tab3">Design</a></li>
+                                    <li><span>04 - </span><a href="#service-tab4">Development</a></li>
                                 </ul>
-<!--Service Tab1-->
-<div id="service-tab1" class="service-tab">
-            <div class="container"> 
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="img/services/service-tab-img-01.jpg" alt="creativity">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="tab-bg">
-                            <h2>01</h2>
-                            <h3>Get More out of life with Creativty</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, doloremque explicabo? Consequatur cupiditate hic iure, nostrum vitae consectetur eveniet dolorem voluptatum porro tenetur aspernatur nobis optio vero? Nulla, amet aliquid.</p>
-                                <div id="services2-btn">
-                                        <a class="btn btn-general btn-red" href="#contact" title="get in touch" role="button">Get in Touch</a>
+                <!--Service Tab1-->
+                <div id="service-tab1" class="service-tab">
+                            <div class="container"> 
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="img/services/service-tab-img-01.jpg" alt="creativity">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="tab-bg">
+                                            <h2>01</h2>
+                                            <h3>Get More out of life with Creativity</h3>
+                                            <p>My approach to developement includes a creative outlook inorder to get the task completed - for both front end design and back end server work. In doing so, I am able to provide a fresh eye to both sides of the fullstack development process.</p>
+                                                <div id="services2-btn">
+                                                        <a class="btn btn-general btn-red" href="#contact" title="get in touch" role="button">Get in Touch</a>
+                                                </div>
+
+                                        </div>
+
+
+                                    </div>
                                 </div>
+                            </div>
+                </div>
 
+                <!--Service Tab2-->
+                <div id="service-tab2" class="service-tab">
+                        <div class="container"> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="img/services/service-tab-img-02.jpg" alt="strategy">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="tab-bg">
+                                        <h2>02</h2>
+                                        <h3>Strategize to meet your goals</h3>
+                                        <p>Any vision without a strategy or gameplan set is just well wishes. In my approach to development, I plan and strategize constantly - always reevaluting priorities. Development has taught me to think on my feet, to react to issues as the arise, and to plan for them. </p>
+                                            <div id="services2-btn">
+                                                    <a class="btn btn-general btn-red" href="#contact" title="get in touch" role="button">Get in Touch</a>
+                                            </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
                         </div>
-
-
                     </div>
-                </div>
-            </div>
-</div>
 
-<!--Service Tab2-->
-<div id="service-tab2" class="service-tab">
-        <div class="container"> 
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="img/services/service-tab-img-02.jpg" alt="strategy">
-                </div>
-                <div class="col-md-6">
-                    <div class="tab-bg">
-                        <h2>02</h2>
-                        <h3>Strategize to meet your goals</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, doloremque explicabo? Consequatur cupiditate hic iure, nostrum vitae consectetur eveniet dolorem voluptatum porro tenetur aspernatur nobis optio vero? Nulla, amet aliquid.</p>
-                            <div id="services2-btn">
-                                    <a class="btn btn-general btn-red" href="#contact" title="get in touch" role="button">Get in Touch</a>
+                <!--Service Tab3-->
+                <div id="service-tab3" class="service-tab">
+                        <div class="container"> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="img/services/service-tab-img-03.jpg" alt="design">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="tab-bg">
+                                        <h2>03</h2>
+                                        <h3>Design with the user in mind</h3>
+                                        <p>Not all design approaches are the same. The end goal or overall approach to your audience is a very key aspect when designing an application. When designing, I always keep the end user in mind - with a focus on letting the user operate and navigate an application intuitively and with ease. </p>
+                                            <div id="services2-btn">
+                                                    <a class="btn btn-general btn-red" href="#contact" title="get in touch" role="button">Get in Touch</a>
+                                            </div>
+
+                                    </div>
+
+
+                                </div>
                             </div>
-
+                        </div>
                     </div>
 
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-<!--Service Tab3-->
-<div id="service-tab3" class="service-tab">
-        <div class="container"> 
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="img/services/service-tab-img-03.jpg" alt="design">
-                </div>
-                <div class="col-md-6">
-                    <div class="tab-bg">
-                        <h2>03</h2>
-                        <h3>Design with the user in mind</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, doloremque explicabo? Consequatur cupiditate hic iure, nostrum vitae consectetur eveniet dolorem voluptatum porro tenetur aspernatur nobis optio vero? Nulla, amet aliquid.</p>
-                            <div id="services2-btn">
-                                    <a class="btn btn-general btn-red" href="#contact" title="get in touch" role="button">Get in Touch</a>
+                <!--Service Tab4-->
+                <div id="service-tab4" class="service-tab">
+                        <div class="container"> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="img/services/service-tab-img-04.jpg" alt="development">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="tab-bg">
+                                        <h2>04</h2>
+                                        <h3>Development suited for your needs</h3>
+                                        <p>The development of your web applications should not be a cookie cutter, one size fits all approach. As a Web Developer, I can promise a unique approach to your web presense, using effective technologies that allow your users to operate your web page with ease and simplicity. </p>
+                                            <div id="services2-btn">
+                                                    <a class="btn btn-general btn-red" href="#contact" title="get in touch" role="button">Get in Touch</a>
+                                            </div>
+                                    </div>
+                                </div>
                             </div>
-
+                        </div>
                     </div>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-<!--Service Tab4-->
-<div id="service-tab4" class="service-tab">
-        <div class="container"> 
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="img/services/service-tab-img-04.jpg" alt="development">
-                </div>
-                <div class="col-md-6">
-                    <div class="tab-bg">
-                        <h2>04</h2>
-                        <h3>Development suited for your needs</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, doloremque explicabo? Consequatur cupiditate hic iure, nostrum vitae consectetur eveniet dolorem voluptatum porro tenetur aspernatur nobis optio vero? Nulla, amet aliquid.</p>
-                            <div id="services2-btn">
-                                    <a class="btn btn-general btn-red" href="#contact" title="get in touch" role="button">Get in Touch</a>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
+                </section>
     <!-- Services SECTION ENDS -->
 
     <!--Work/Portfolio SECTION-->
     <section id="portfolio">
-                <div class="content-box-md">
-                        <div class="col-md-12">
-                                <div class="vertical-heading">
-                                    <h5>What can I do?</h5>
-                                    <h2>This is <strong>My</strong><br> Portfolio</h2>
-                                </div>
+                <div class="content-box-lg">
+
+                                <div class="container">
+                           
+                                        <div class="row">
+
+                                            <div class="col-md-6 col-sm-6 wow slideInLeft" data-wow-duration="1s">
+                                          
+                                                        <div class="vertical-heading">
+                                                                <h5>What have I done?</h5>
+                                                                <h2>This is <strong>My</strong><br>
+                                                                    Portfolio</h2>
+                                                        </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 wow slideInRight" data-wow-duration="1s">
+                                                        <p>Welcome to the portfolio section of my page. The following is a demonstration of some of the skill I have gained from my time as a developer. This is where I get to show off some of my skills. Please select from the headings below if you would like to filter these web applications further.</p>
+                                                </div>
+                                            
                         </div>
-                    <div class="container">
+                    <!-- </div>
+                    <div class="container"> -->
                         <div class="row">
                            
-                            <div class="col-md-12">
+                            <div class="col-md-12 wow rollIn" data-wow-duration="1s">
                                 <!--Portfolio Filter-->
                                 <div id="isotope-filters">
                                     <button class="btn active" data-filter="*"><span> Show All </span></button>
                                     <button class="btn" data-filter=".csshtml"><span> CSS/HTML </span></button>
                                     <button class="btn" data-filter=".javascript"><span> Javascript </span></button>
-                                    <button class="btn" data-filter=".node"><span> Node </span></button>
-                                    <button class="btn" data-filter=".sql"><span> SQL </span></button>
+                                    <button class="btn" data-filter=".node"><span> NodeJS </span></button>
+                                    <button class="btn" data-filter=".sql"><span> MySQL </span></button>
                                     <button class="btn" data-filter=".mongoDB"><span> MongoDB </span></button>
-                                    <button class="btn" data-filter=".react"><span> React </span></button>
-                                    <button class="btn" data-filter=".fullstack"><span> Fullstack </span></button>
+                                    <button class="btn" data-filter=".react"><span> ReactJS </span></button>
+                                    <button class="btn" data-filter=".fullstack"><span> Fullstack Applications </span></button>
 
                                 </div>
 
@@ -644,8 +742,9 @@
                         </div>
                     </div>
                 
+                
         <!--Portfolio Wrapper-->
-        <section id="portfolio-wrapper">
+        <section id="portfolio-wrapper" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
             <div class="container-fluid">
                 <div class="row no-gutters">
                     <div id="isotope-containter">
@@ -814,47 +913,46 @@
         <div class="content-box-md">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 wow slideInLeft">
                         <div class="vertical-heading">
                             <h5>Did you know?</h5>
-                            <h2>My fun <br><strong>coding</strong> facts</h2>
+                            <h2>Check out these fun <br><strong>Random</strong> facts</h2>
 
                         </div>
 
                     </div>
                 </div>
-                <div class="row">
+                <div class="row wow fadeInUp" data-wow-duration="2s">
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <!--Stat 1-->
                         <div class="stats-item text-center">
-                            <i class="fas fa-code"></i>
-                            <h3 class="counter">20,000</h3>
-                            <p>Lines of Code typed out</p>
-                        
+                                <i class="fas fa-code"></i>
+                            <h3 class="counter" id="factNum1"></h3>
+                            <p id="factText1"></p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-6"> 
                         <!--Stat 2-->
                         <div class="stats-item text-center">
                                 <i class="fas fa-code-branch"></i>
-                            <h3 class="counter">26</h3>
-                            <p>GitHub Repositories</p>
+                                <h3 class="counter" id="factNum2"></h3>
+                                <p id="factText2"></p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <!--Stat 3-->
                         <div class="stats-item text-center">
                                 <i class="fas fa-clock"></i>
-                                <h3 class="counter">262800</h3>
-                                <p>hours alive on this Earth</p>
+                                <h3 class="counter" id="factNum3"></h3>
+                                <p id="factText3"></p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <!--Stat 4-->
                         <div class="stats-item text-center">
                                 <i class="fas fa-calendar-alt"></i>
-                                <h3 class="counter">8,760</h3>
-                                <p>Hours spent coding away</p>
+                                <h3 class="counter" id="factNum4"></h3>
+                                <p id="factText4"></p>
                         </div>
                     </div>
                 </div>
@@ -869,7 +967,7 @@
             <div class="container">
                 <div class="row">
                     <!--address info-->
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-6 col-sm-6 wow slideInLeft" data-wow-duration="1s">
                             <div class="vertical-heading">
                                     <h5>Who am I?</h5>
                                     <h2>How to <br><strong>Contact </strong>me</h2>
@@ -886,11 +984,11 @@
                                                 <li><i class="fa fa-mobile-alt"></i>+1 289 788 2149</li>
                                                 <li><i class="fa fa-phone-square"></i>+1 905 545 9035</li>
                                                 <li><i class="fas fa-at"></i>Melvyn.Ling@Gmail.com</li>
-                                                <li><i class="fas fa-address-book"></i>Hamilton, Ontario, Canada</li>
+                                                <li><i class="fas fa-map-marked-alt"></i>Hamilton, Ontario, Canada</li>
                                             </ul>
                                         </div>
                                         <ul class="social-list">
-                                                <li><a href="#"><i class="fab fa-facebook-f"></i></i></a></li>
+                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                                 <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                                                 <li><a href="#"><i class="fab fa-github"></i></a></li>
@@ -904,7 +1002,7 @@
                         </div>
                     </div>
                     <!--Contact Form-->
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-6 col-sm-6 wow slideInRight" data-wow-duration="1s">
                         <div id="contactRight">
 
                         <form>
@@ -987,29 +1085,44 @@
     </footer>
     <!--Footer Ends-->
 
-         </body>  
+         </body> 
+         
             <!--Custom JQuery-->
                 <script src="js/jquery.js"></script>
+
             <!--Bootstrap JS-->
                 <script src="js/bootstrap/bootstrap.js"></script>
+
             <!--Owl Carousel JS-->
                 <script src="js/owl-carousel/owl.carousel.min.js"></script>
+
             <!--Waypoints JS-->
                 <script src="js/waypoints/jquery.waypoints.min.js"></script>
-            <!---Quote API Call--->
-                <script src="js/quoteAPIcall.js"></script>
+
+            <!---API Calls--->
+            <script src="js/APIcalls.js"></script>
+
             <!--Responsive Tabs Plugin-->
                 <script src="js/responsive-tabs/jquery.responsiveTabs.min.js"></script>
+
             <!-- ISOTOPE JS plugin -->
                 <script src="js/isotope/isotope.pkgd.min.js"></script>
+
             <!--Magnific Popup JS plugin-->
                 <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+
             <!--Counter Plugin-->
                 <script src="js/counter/jquery.counterup.min.js"></script>
+
             <!--Google Map JS-->
                 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXgGwmZ4_DsoeditWBlTklR2dcrvldu6Q&callback=initMap" type="text/javascript"></script>
+
             <!--Easing-->
                 <script src="js/easing/jquery.easing.1.3.js"></script>
+
+            <!--Wow JS-->
+                <script src="js/wow/wow.min.js"></script>
+
             <!--Custom JS-->
                 <script src="js/script.js"></script>
 
