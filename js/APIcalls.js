@@ -1,11 +1,11 @@
-$.getJSON('http://quotes.stormconsultancy.co.uk/random.json', function (response) {
+$.getJSON('https://quotes.stormconsultancy.co.uk/random.json', function (response) {
     var quoted = response.quote;
     var authored = response.author;
        $("#inspire-quoteofday").append(quoted);
        $("#inspire-quoteofdayauth").append("- " + authored);
     });
     
-$.getJSON('http://numbersapi.com/random/date?json', function (response) {
+$.getJSON('https://numbersapi.com/random/date?json', function (response) {
    //  console.log(response);
          var date = response.year;
             // console.log(date);
@@ -18,7 +18,7 @@ $.getJSON('http://numbersapi.com/random/date?json', function (response) {
    $("#factText1").append(dateText1);
 });
 
-$.getJSON('http://numbersapi.com/random/math?json', function (response) {
+$.getJSON('https://numbersapi.com/random/math?json', function (response) {
          // console.log(response); 
          var math = response.number;
          var mathDate = Number(math).toString();
@@ -29,7 +29,7 @@ $.getJSON('http://numbersapi.com/random/math?json', function (response) {
          $("#factText2").append(mathText);
 });
 
-$.getJSON('http://numbersapi.com/random/trivia?json', function (response) {
+$.getJSON('https://numbersapi.com/random/trivia?json', function (response) {
            // console.log(response); 
            var trivia = response.number;
            var triviaNum = Number(trivia).toString();
@@ -40,7 +40,7 @@ $.getJSON('http://numbersapi.com/random/trivia?json', function (response) {
            $("#factText3").append(triviaText);
 });
 
-$.getJSON('http://numbersapi.com/random/year?json', function (response) {
+$.getJSON('https://numbersapi.com/random/year?json', function (response) {
             //  console.log(response);
             var date = response.number;
             // console.log(date);
