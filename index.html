@@ -20,7 +20,7 @@
                 <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900" rel="stylesheet">
 
             <!--FontAwesome-->
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
             <!--Bootstrap CSS-->
                 <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
@@ -40,6 +40,12 @@
 
             <!--Custom CSS/Styling-->
                 <link rel="stylesheet" href="css/style.css">
+
+                
+                <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+
+
+                            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 
 
             
@@ -928,7 +934,7 @@
                         <div class="stats-item text-center">
                                 <i class="fas fa-code"></i>
                             <h3 class="counter" id="factNum1">26</h3>
-                            <p id="factText1">Is the number of GitHub repositories I have contributed to in total.</p>
+                            <p id="factText1">Is the number of GitHub repositories I have contributed to in t3otal.</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-6"> 
@@ -1005,36 +1011,36 @@
                     <div class="col-md-6 col-sm-6 wow slideInRight" data-wow-duration="1s">
                         <div id="contactRight">
 
-                        <form>
+                        <form id="contactForm">
                             <h4>Send me a Message</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, ex!</p>
+                            <p>Fill out the fields below and I promise to get back to you as soon as I can!</p>
                             <div class="row">
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Name">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                 <div class="form-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Email Address">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"  required>
                                 </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                         <div class="form-group">
-                                        <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number"  required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                         <div class="form-group">
-                                        <input type="email" class="form-control" id="subject" placeholder="Subject">
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" id="message" placeholder="Please enter your message here..."></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." type="text"></textarea>
                             </div>
                             <div id="-btn">
-                                <a class="btn btn-general btn-red text-right" href="#" title="text" role="button">Send</a>
+                                <a class="btn btn-general btn-red text-right" href="#" title="text" role="button" value="Submit" type="button" id="contactFormBtn">Send</a>
                             </div>
 
 
@@ -1086,9 +1092,11 @@
     <!--Footer Ends-->
 
          </body> 
-         
             <!--Custom JQuery-->
                 <script src="js/jquery.js"></script>
+
+            <!--Validation for contact form-->
+                <script src="js/validate/jquery.validate.min.js"></script>
 
             <!--Bootstrap JS-->
                 <script src="js/bootstrap/bootstrap.js"></script>
@@ -1122,6 +1130,9 @@
 
             <!--Wow JS-->
                 <script src="js/wow/wow.min.js"></script>
+
+            <!--Firebase/form jQuery-->
+                <script src="js/submitForm.js"></script>
 
             <!--Custom JS-->
                 <script src="js/script.js"></script>
