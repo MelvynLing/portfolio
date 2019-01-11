@@ -1,9 +1,20 @@
+// var request = require('request');
+// var unirest = require('unirest');
 
+// unirest.post("https://andruxnet-random-famous-quotes.p.mashape.com/?cat=movies&count=10")
+// .header("X-Mashape-Key", "w6pXkm2Gp3mshyMUsldw8ZXSOWC9p1bOQhBjsnhy5gFVt1dJXw")
+// .header("Content-Type", "application/x-www-form-urlencoded")
+// .header("Accept", "application/json")
+// .end(function (result) {
+//   console.log(result.status, result.headers, result.body);
+// });
 
-  $.getJSON('https://quotes.stormconsultancy.co.uk/random.json', function (response) {
+  $.getJSON('https://quotes.rest/qod.json?category=inspire', function (response) {
    console.log(response);
-   var quoted = response.quote;
-   var authored = response.author;
+    var quoted = response.contents.quotes[0].quote;
+    console.log(quoted);
+    var authored = response.contents.quotes[0].author;
+    console.log(authored);
       $("#inspire-quoteofday").append(quoted);
       $("#inspire-quoteofdayauth").append("- " + authored);
    });

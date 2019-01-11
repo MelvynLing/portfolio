@@ -81,7 +81,7 @@ $(window).on('load', function () {
                     filter: filterValue
                 });
                 //active button
-                $("#isotope-filters").find('.active').removeClass('active')
+                $("#isotope-filters").find('.active').removeClass('active');
                 $(this).addClass('active');
         });
 });
@@ -123,7 +123,7 @@ $(function () {
 =========================================*/
 $(window).on("load", function () {
     //locations
-    var currentLocale = "Hamilton, Ontario, Canada"
+    var currentLocale = "Hamilton, Ontario, Canada";
     var myLatLng = {lat:43.255722, lng:-79.871101};
     //renders map
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -135,7 +135,7 @@ $(window).on("load", function () {
         position: myLatLng,
         map: map,
         title: "Click to See Address!"
-    })
+    });
     var infowindow = new google.maps.InfoWindow({
         content: currentLocale
     });

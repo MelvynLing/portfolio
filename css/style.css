@@ -1423,7 +1423,7 @@ animation
         width: 25px;
     } 
     #mobile-nav-open-btn {
-        display:hidden;
+        display:block;
     }
     .headshot-overlay-info {
         margin: 20px 0 0 0;
@@ -1449,7 +1449,7 @@ animation
         width: 120px
     }
 
-
+}
 
 /*Extra Small Devices - Phones/Tablets/etc */
 @media (max-width: 767px) {
@@ -1513,7 +1513,10 @@ animation
         line-height: normal;
         margin: 0 0 40px 0;
     }
-
+    .about-item{
+        margin:20px;
+        padding:0px;
+    }
     .about-item hr {
         width: 30px
     }
@@ -1683,30 +1686,30 @@ animation
         padding: 20px 0;
     }
     
-.headshot-overlay-info {
-    margin: 20px 0 0 0;
-}
+    .headshot-overlay-info {
+        margin: 20px 0 0 0;
+    }
 
-.headshot-overlay-info h6,
-.skilltext h6 
- { 
-    font-weight: 500;
-    font-size: 45px;
-    margin: 3px;
-}
-.headshot-overlay-info p,
-.skilltext p 
- { 
-    font-weight: 500;
-    font-size: 15px;
-    margin: 3px;
-}
+    .headshot-overlay-info h6,
+    .skilltext h6 
+    { 
+        font-weight: 500;
+        font-size: 45px;
+        margin: 3px;
+    }
+    .headshot-overlay-info p,
+    .skilltext p 
+    { 
+        font-weight: 500;
+        font-size: 15px;
+        margin: 3px;
+    }
 
-.skilltext {
-    width: 100%;
-    height: 100%;
-    margin: 40px 5px;
-}
+    .skilltext {
+        width: 100%;
+        height: 100%;
+        margin: 40px 5px;
+    }
 
 }
     

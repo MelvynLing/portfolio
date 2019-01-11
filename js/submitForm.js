@@ -1,35 +1,26 @@
 
-jQuery.validator.setDefaults({
-    debug: true,
-    success: "valid"
-  });
-  
-
-var form = $("contactFormBtn");
 
 /*=======================================
 -----------------------------------------
         FIREBASE / CONTACT FORM
 -----------------------------------------
 =========================================*/
-
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyCbgXS6nQAyPfV3rLfE4tsbAgObfWQBaH8",
-    authDomain: "melsport.firebaseapp.com",
-    databaseURL: "https://melsport.firebaseio.com",
-    projectId: "melsport",
-    storageBucket: "melsport.appspot.com",
-    messagingSenderId: "753747784706"
+    apiKey: "AIzaSyC8CtovO7LW4FGFVc6l5MNQJbESd4BBJGU",
+    authDomain: "melvyn-ac0b4.firebaseapp.com",
+    databaseURL: "https://melvyn-ac0b4.firebaseio.com",
+    projectId: "melvyn-ac0b4",
+    storageBucket: "melvyn-ac0b4.appspot.com",
+    messagingSenderId: "787906090509"
   };
   firebase.initializeApp(config);
   
-  var formData = firebase.database();
+  var formData = firebase.database().ref();
 
   $('#contactFormBtn').on('click',function(){
 
-    form.validate();
-    
+
 
       var name =$("#name").val().trim();
       var email =$("#email").val().trim(); 
@@ -43,11 +34,11 @@ var form = $("contactFormBtn");
           telNum:telNum,
           subject:subject,
           message:message
-      }
+      };
 
-      formData.ref().push(newMessage);
+      formData.push("NewMessage").set(newMessage);
 
-      alert("Your Message has been recieved! I will get back to you shortly!")
+      alert("Your Message has been recieved! I will get back to you shortly!");
 
             $("#name").val("");
             $("#email").val(""); 
