@@ -1514,17 +1514,19 @@ animation
         margin: 0 0 40px 0;
     }
     .about-item{
-        margin:20px;
-        padding:0px;
+        height: 375px;
+        margin:25px 40px;
+        padding:20px;
     }
     .about-item hr {
-        width: 30px
+        width: 130px
     }
     .about-item i{
+        margin-top:50px;
         font-size: 30px;
     }
     .about-item h3 {
-        font-size: 18px;
+        font-size: 30px;
     }
     #aboutRight {
         text-align: center;
@@ -1719,7 +1721,14 @@ animation
         font-size: 20px;
         padding: 6px 0 0 0;
     }
-    
+    #inspire-quoteofday{
+        font-size:25px;
+    }
+
+    #quote #inspire-quoteofdayauth {
+        padding:0;
+        font-size:17px;
+    }
     #home-heading h1 {
         font-size: 25px;
     }
@@ -1745,7 +1754,7 @@ animation
         padding: 10px 0;
     }
     #isotope-filters button{
-        font-size: 10px;
+        font-size: 15px;
 
     }
     #mobile-nav-open-btn {
