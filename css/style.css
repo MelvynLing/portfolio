@@ -62,6 +62,7 @@ section {
     margin-top: -35px;
     margin-left:-35px;
  }
+
  /* =======================================
 -----------------------------------------
             HOME - CSS
@@ -1064,7 +1065,7 @@ ul.navbar-nav > li.active > a {
     color: #fff;
     border-bottom: 2px solid #d21b32;
     padding-bottom: 2px;
-    font-weight: 600;
+    font-weight: 500;
 }
 ul.navbar-nav > li > a:hover ,
 ul.navbar-nav > li > a:focus {
@@ -1072,7 +1073,7 @@ ul.navbar-nav > li > a:focus {
     color: #d21b32;
     border-bottom: 2px solid #d21b32;
     padding-bottom: 2px; 
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* white nav */
@@ -1108,7 +1109,7 @@ ul.navbar-nav > li > a:focus {
     color: #d21b32;
     border-bottom: 2px solid #212226;
     padding-bottom: 2px;
-    font-weight: 600;
+    font-weight: 500;
 
 }
 /* scroll scpy - active class */
@@ -1116,7 +1117,7 @@ ul.navbar-nav > li > a:focus {
     color: #212226;
     border-bottom: 2px solid #d21b32;
     padding-bottom: 2px;
-    font-weight: 600;
+    font-weight: 500;
 }
 footer {
     padding-bottom: 75px;
@@ -1514,7 +1515,7 @@ animation
         margin: 0 0 40px 0;
     }
     .about-item{
-        height: 375px;
+        height: auto;
         margin:25px 40px;
         padding:20px;
     }
@@ -1722,12 +1723,21 @@ animation
         padding: 6px 0 0 0;
     }
     #inspire-quoteofday{
-        font-size:25px;
+        font-size:20px;
     }
 
     #quote #inspire-quoteofdayauth {
         padding:0;
         font-size:17px;
+    }
+    #service-2 #services-tabs img {
+        height: auto;
+    }
+    #service-2 #services-tabs .tab-bg {
+        height: auto;
+    }
+    #services #services2-btn a {
+        margin: 35px 0 50px;
     }
     #home-heading h1 {
         font-size: 25px;
