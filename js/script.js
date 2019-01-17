@@ -87,21 +87,21 @@ $(window).on('load', function () {
 });
 /*=======================================
 -----------------------------------------
-    Portfolio Section magnifier
+    home Section magnifier
              - JQUERY
 -----------------------------------------
 =========================================*/
-$(function () {
+// $(function () {
 
-    $("#portfolio-wrapper").magnificPopup({
-        delegate: 'a',
-        type:'image',
-        gallery: {
-            enabled: true
-        }
-    });
+//     $("#portfolio-wrapper").magnificPopup({
+//         delegate: 'a',
+//         type:'image',
+//         gallery: {
+//             enabled: true
+//         }
+//     });
 
-});
+// });
 
 /*=======================================
 -----------------------------------------   
