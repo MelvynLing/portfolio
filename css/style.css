@@ -1533,7 +1533,7 @@ animation
         font-size: 30px;
     }
     #aboutRight {
-        text-align: center;
+        text-align: left;
     }
     .content-box-md {
         padding: 80px 0;
