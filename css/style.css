@@ -463,7 +463,7 @@ ul.social-list li a {
     transition: all 400ms linear;
 }
 ul.social-list li:nth-child(1) a:hover {
-    background-color: #3b5998;
+    background-color:#0077B5;
     border-color: transparent;
     }
 ul.social-list li:nth-child(2) a:hover {
@@ -471,10 +471,6 @@ ul.social-list li:nth-child(2) a:hover {
     border-color: transparent;
 }
 ul.social-list li:nth-child(3) a:hover {
-    background-color: #dd4b39;
-    border-color: transparent;
-}
-ul.social-list li:nth-child(4) a:hover {
     background-color: #333;
     border-color: transparent;
 }
