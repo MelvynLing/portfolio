@@ -93,17 +93,17 @@ $(window).on('load', function () {
              - JQUERY
 -----------------------------------------
 =========================================*/
-// $(function () {
+$(function () {
 
-//     $("#portfolio-wrapper").magnificPopup({
-//         delegate: 'a',
-//         type:'image',
-//         gallery: {
-//             enabled: true
-//         }
-//     });
+    $("#resume-btn").magnificPopup({
+        delegate: 'a',
+        type:'iframe',
+        gallery: {
+            enabled: true
+        }
+    });
 
-// });
+});
 
 /*=======================================
 -----------------------------------------   
