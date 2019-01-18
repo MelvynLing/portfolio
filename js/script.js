@@ -97,7 +97,7 @@ $(function () {
 
     $("#resume-btn").magnificPopup({
         delegate: 'a',
-        type:'iframe',
+        type:'image',
         gallery: {
             enabled: true
         }
