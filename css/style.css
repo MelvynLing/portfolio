@@ -49,6 +49,7 @@ section {
     left:0px;
     right:0px;
     z-index: 9999;
+    overflow: hidden;
 }    
 #status {
     background-image: url('../img/preloader/preloader1.gif');
@@ -62,6 +63,10 @@ section {
     margin-top: -35px;
     margin-left:-35px;
  }
+ .loading {
+    overflow: hidden;
+    height: 100vh;
+  }
 
  /* =======================================
 -----------------------------------------

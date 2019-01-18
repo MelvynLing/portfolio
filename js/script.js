@@ -4,7 +4,9 @@
 -----------------------------------------
 =========================================*/ 
 $(window).on("load", function() { // <-- this makes sure the whole site is loaded.
-    $("#status").fadeOut();
+    $("#status").fadeOut(function() {
+        $('body').removeClass('loading');
+    });
     $("#preloader").delay(350).fadeOut('slow');
 });
 
