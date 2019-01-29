@@ -112,7 +112,7 @@ section {
 #home-heading h1 {
     color:#ffffff;
     font-size: 85px;
-    font-weight: 100;
+    font-weight: 200;
     font-variant: small-caps;
     /* text-transform: uppercase; */
     margin: 0;
@@ -125,7 +125,7 @@ section {
 #home-text p {
     color: #ffffff;
     font-size: 17px;
-    font-weight: 100;
+    font-weight: 200;
     margin: 8px 0 30px 0;
 }
 #home .strips {
@@ -258,7 +258,7 @@ section {
 .vertical-heading h2, 
 .horizontal-heading h2{
     font-size: 42px;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 45px;
 } 
 .horizontal-heading {
@@ -509,7 +509,7 @@ ul.social-list li:nth-child(3) a:hover {
     font-variant: small-caps;
     /* text-transform: uppercase; */
 }
-.progress {
+/* .progress {
     height: 25px;
     border-radius: 0;
     background-color: #efefef;
@@ -535,7 +535,7 @@ ul.social-list li:nth-child(3) a:hover {
     border-right: 6px solid transparent;
     position: absolute;
     bottom: -8px;
-    left: 23%;
+    left: 23%; */
 }
  /* =======================================
 -----------------------------------------
@@ -685,7 +685,7 @@ ul.social-list li:nth-child(3) a:hover {
     color: #d21b32;
     display: inline-block;
     font-size: 45px;
-    font-weight: 100;
+    font-weight: 200;
     /* border-bottom: 2px solid #d21b32; */
 }
 .service-tab h3{
@@ -1045,7 +1045,7 @@ footer .strips {
     color: #fff;
 } 
 .navbar-brand h2{
-    font-weight: 100;
+    font-weight: 200;
     font-size: 33px;
     margin-top: 0;
     font-variant: small-caps;
