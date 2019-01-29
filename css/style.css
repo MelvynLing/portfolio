@@ -918,13 +918,20 @@ ul.social-list li:nth-child(3) a:hover {
     background: #f4f4f4;
 }
 #contactLeft p{
+    color: #f4f4f4;
     margin: 25px 0 20px 0;
 }
+#contactLeft h4{
+    color: #f4f4f4;
+    
+}
 ul.address-details {
+    color: #f4f4f4;
     list-style: none;
     padding: 0
 }
 ul.address-details li {
+    color: #f4f4f4;
     font-family: "Raleway", sans-serif;
     margin-top: 12px;  
     /* display: -webkit-inline-box;
@@ -932,20 +939,21 @@ ul.address-details li {
     /* display: inline; */
 }
 ul.address-details li i {
+    color: #f4f4f4;
     font-size: 20px;
     width:45px;
     text-align: center;
 }
 
 #contactLeft ul.social-list li a {
-    color: #212226;
-    border: 1px solid #212226;
+    color: #f4f4f4;
+    border: 1px solid #f4f4f4;
     text-align: center;
     margin-bottom: 25px;
 }
 #contactLeft ul.social-list li a:hover {
-    color: #fff;
-    border: transparent;
+    color: #f4f4f4;
+    border: 1px solid transparent;
 
 }
     /*Right side*/
