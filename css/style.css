@@ -536,7 +536,7 @@ ul.social-list li:nth-child(3) a:hover {
     position: absolute;
     bottom: -8px;
     left: 23%; */
-}
+/* } */
  /* =======================================
 -----------------------------------------
         Quote Section - CSS
@@ -915,8 +915,19 @@ ul.social-list li:nth-child(3) a:hover {
 ========================================= */
     /*left side*/
 #contact {
-    background: #f4f4f4;
+    background:  url("../img/contact/code2.jpg") no-repeat fixed center;
+    background-size: cover;
+    display: grid
 }
+
+#contact .content-box-md {
+    background:rgba(0, 0, 0, 0.8)
+}
+
+#contact .vertical-heading {
+    color: #f4f4f4;
+}
+
 #contactLeft p{
     color: #f4f4f4;
     margin: 25px 0 20px 0;
@@ -959,6 +970,7 @@ ul.address-details li i {
     /*Right side*/
 #contactRight {
     background:#fff;
+    margin: 45px 20px; 
     padding: 30px 30px;;
     -webkit-box-shadow: 0 0 10 0 rgba(0,0,0,0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);

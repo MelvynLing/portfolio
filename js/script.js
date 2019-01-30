@@ -42,16 +42,16 @@ $(function(){
                 - JQUERY
 -----------------------------------------
 =========================================*/
-$(function(){
-    $("#progress-elements").waypoint(function(){
-        $(".progress-bar").each(function(){
-            $(this).animate({width: $(this).attr("aria-valuenow") + "%"}, 5000);
-        });   
-        this.destroy();
-    }, {
-        offset: 'middle-in-view'
-    });
-});
+// $(function(){
+//     $("#progress-elements").waypoint(function(){
+//         $(".progress-bar").each(function(){
+//             $(this).animate({width: $(this).attr("aria-valuenow") + "%"}, 5000);
+//         });   
+//         this.destroy();
+//     }, {
+//         offset: 'middle-in-view'
+//     });
+// });
 /*=======================================
 -----------------------------------------
     Responsive tabs/Service2 section
@@ -111,12 +111,12 @@ $(window).on('load', function () {
 -----------------------------------------
 
 =========================================*/
-$(function () {
-    $(".counter").counterUp({
-        delay: 10,
-        time: 1000    
-    });
-});
+// $(function () {
+//     $(".counter").counterUp({
+//         delay: 10,
+//         time: 1000    
+//     });
+// });
 
 /*=======================================
 -----------------------------------------   
